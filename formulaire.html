@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <style>
+        body{
+           height: 1200px;
+           width: 600px;
+           display: block;
+           margin: 8px ;
+           padding-right: 10px;
+           padding-left: 10px;
+           border-left-width: 20px;
+           margin-right: 20px;
+           margin-left: 220px;
+           background-color: antiquewhite;
+        }
+        label, input{
+            display: block;
+            font-size: 25px;   
+        }
+       
+        #h1{
+        background-color: rgb(247, 169, 117);
+        }
+        h1 {
+         display: block;
+         font-size: 3em;
+         margin-block-start: 0.67em;
+         margin-block-end: 0.67em;
+         margin-inline-start: 0px;
+         margin-inline-end: 0px;
+         font-weight: bold;
+        }
+        h2 {
+         display: block;
+         font-size: 2em;
+         margin-block-start: 0.67em;
+         margin-block-end: 0.67em;
+         margin-inline-start: 0px;
+         margin-inline-end: 0px;
+         font-weight: bold;
+        }
+         img {
+           overflow-clip-margin: content-box;
+           overflow: clip;
+           padding-left: 450px;
+           width: 150px;
+           height: 140px;
+           margin-bottom: 10px;
+        }
+        #damotepr{
+            position: absolute;
+            left: 650px; 
+            bottom: 365px;  
+        }
+        #plusyst{
+            position: absolute;
+            left: 650px; 
+            bottom: 75px; 
+        }
+         input{
+            width:50%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="h1">
+        <h1> Systéme d'exploitation </h1>
+        <h2> C'est mon systéme.. </h2>
+        <img src="images (2).jpg" alt="">
+    </div>
+    <hr>
+    <div id="person">
+     <form  action="https://dekpo.com/form/post/php"  method="post">
+      <div>
+      <label for="nom">NOM :</label>
+      <input type="text" name="nom" id="nom" placeholder="votre nom" required>
+      <label for="prénome">Prénome :</label>
+      <input type="email" name="email" id="email" placeholder="votre prenome" required>
+      <label for="email">EMAIL :</label>
+      <input type="email" name="email" id="email" placeholder="votre email"   required>
+      <label for="password">password :</label>
+      <input type="email" name="email" id="email" placeholder="votre prenome" required>
+      <input type="submit" value="Envoyer">
+       <div id="damotepr">
+        <label>Date :</label>
+           <input type="date" />
+       
+        <label>Mois :</label>
+           <input type="month" />
+       
+        <label>Temps :</label>
+           <input type="time" />
+       
+        <label>programming :</label>
+         <input list="programming" name="prog">
+   
+         <datalist id="programming">
+         <option value="Python">
+         <option value="PHP">
+         <option value="C#">
+         <option value="C">
+         <option value="C++">
+         <option value="html">
+         </datalist>
+       </div>
+      </div>
+    </div>
+       <hr> 
+       <div id="1syst">
+        <label>choisissez un systéme :</label>
+        <input id="win" type="radio" name="os" value="Windows" checked />
+        <label for="win">Windows</label>
+        <input id="lin" type="radio" name="os" value="Linux" />
+        <label for="lin">Linux</label>
+        <input id="mac" type="radio" name="os" value="Mac" />
+        <label for="mac">Mac</label>
+     
+    </div>
+    <div id="plusyst">
+        <label>choisissez plus  d'un systéme :</label>
+        <input id="win1" type="checkbox" name="os" value="Windows" checked />
+        <label for="win1">Windows</label>
+        <input id="lin1" type="checkbox" name="os" value="Linux" />
+        <label for="lin1">Linux</label>
+        <input id="mac1" type="checkbox" name="os" value="Mac" />
+        <label for="mac1">Mac</label>
+     </div> 
+    <hr>
+    <div id="syst1">
+      <br />
+      <label for="book">choisissez un systéme :</label>
+      <select name="book" id="book">
+        <optgroup label="systéme">
+          <option value="1">Windows 1</option>
+          <option value="2">Linux 2</option>
+          <option value="3">Mac 3</option>
+        </optgroup>
+        <optgroup label="systéme 2">
+          <option value="4" selected>Windows </option>
+          <option value="5">Linux 5</option>
+          <option value="6">Mac 6</option>
+        </optgroup>
+      </select>
+    </div>
+     <hr />
+    <div id="color">
+        <label>Color :</label>
+        <input type="color" name="Color">
+      
+      <br>
+      <div>
+        <label>Range :</label>
+        <input type="range" name="range" min="0" max="100" step="20" value="80">
+      </div>
+      <br>
+      <div>
+        <label>Number :</label>
+        <input type="number" name="number" min="10" max="100" step="10">
+      </div>
+   </div>
+      <hr />
+   
+      <hr />
+    
+
+      <hr />
+      <textarea name="subject" cols="40" rows="10" placeholder="Test Text"></textarea>
+      <hr />
+      <input type="reset" value="Reset">
+      <input type="submit" value="Save">
+   </form> 
+    
+</body>
+</html>

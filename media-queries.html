@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: rgb(41, 170, 88);
+            transition: 1s ease-in;
+        }
+        .machin{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+        }
+         @media screen and (max-width:800px)  {
+
+            body {
+                background-color: red;
+            }
+            
+            .machin{
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="machin hide-small"></div>
+    
+</body>
+</html>
